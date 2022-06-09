@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3</title>
+    <style>
+        html * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>ID - 1001852000</h1>
+        <h2>Name - Karan Jeeten Thakkar</h2>
+        <h4><a href="{{ url_for('operations') }}">Go to operations page</a></h4>
+        <h4>Count - {{count}} </h4>
+        <h4>Time (in seconds) - {{time}} s </h4>
+        <table border="1" cellpadding="15" cellspacing="3" align="center" width="60%">
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Pwd</th>
+                <th>Code</th>
+            </tr>
+            {% for row in rows %}
+            <tr>
+                {% for single_column in row %}
+                <td>{{single_column}}</td>
+                {% endfor %}    
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+
+</html>
