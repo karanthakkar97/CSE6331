@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        html * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>ID - 1001852000</h1>
+        <h2>Name - Karan Jeeten Thakkar</h2>
+        <h3><a href="{{ url_for('operations') }}">Go to operations page</a></h4>
+        <h3>In the last {{days}} days, {{count}} earthquakes were recorded.</h2>
+        <h3>Magnitude 1-2: {{one_two}}</h3>
+        <h3>Magnitude 2-3: {{two_three}}</h3>
+        <h3>Magnitude 3-4: {{three_four}}</h3>
+        <h3>Magnitude 4-7: {{four_seven}}</h3>
+    </center>
+</body>
+
+</html>
