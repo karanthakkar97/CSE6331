@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # Connecting to database
 
-host = "tcp:cse6331.database.windows.net"
-db = "cse6331"
-user = "kjtcse6331"
-pwd ="AzureSQL@CSE6331"
+host = ""
+db = ""
+user = ""
+pwd ="@CSE6331"
 driver= '{SQL Server}'
 # driver= '{ODBC Driver 17 for SQL Server}'
 connection = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+host+';PORT=1443;DATABASE='+db+';UID='+user+';PWD='+ pwd)
