@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2</title>
+    <title>Quiz 3</title>
     <style>
         html * {
             font-family: Arial, Helvetica, sans-serif;
@@ -15,24 +15,23 @@
         <h1>ID - 1001852000</h1>
         <h2>Name - Karan Jeeten Thakkar</h2>
         <h4><a href="{{ url_for('operations') }}">Go to operations page</a></h4>
+        <h4>Count - {{count}} </h4>
+        <h4>Time (in seconds) - {{time}} s </h4>
         <table border="1" cellpadding="15" cellspacing="3" align="center" width="60%">
             <tr>
-                <th>Time</th>
-                <th>Latittude</th>
-                <th>Longitude</th>
-                <th>Depth</th>
-                <th>Magnitude</th>
-                <th>Place</th>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Pwd</th>
+                <th>Code</th>
             </tr>
-            {% for earthquake in earthquakes %}
+            {% for row in rows %}
             <tr>
-                {% for single_column in earthquake %}
+                {% for single_column in row %}
                 <td>{{single_column}}</td>
                 {% endfor %}    
             </tr>
             {% endfor %}
         </table>
-        <h4>Count - {{count}} </h4>
     </center>
 </body>
 

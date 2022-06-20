@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2</title>
+    <title>Quiz 3</title>
     <style>
         html * {
             font-family: Arial, Helvetica, sans-serif;
@@ -18,6 +18,58 @@
         <h1>ID - 1001852000</h1>
         <h2>Name - Karan Jeeten Thakkar</h2>
         <div>
+            <form method="POST" action = "/id_range" enctype="multipart/form-data">
+                <label>5. Start - </label>
+                <input type = "text" name = "id_start" required>
+                <label>End - </label>
+                <input type = "text" name = "id_end" required>  
+                <input type = "submit" value = "List Rows">
+            </form>
+        </div>
+
+        <div>
+            <form method="POST" action = "/id_range_inner_join" enctype="multipart/form-data">
+                <label>6. a. Inner Join - Start - </label>
+                <input type = "text" name = "id_start_inner_join" required>
+                <label>End - </label>
+                <input type = "text" name = "id_end_inner_join" required>  
+                <input type = "submit" value = "List Rows">
+            </form>
+        </div>
+
+        <div>
+            <form method="POST" action = "/matching_code" enctype="multipart/form-data">
+                <label>6. b. Inner Join - N - </label>
+                <input type = "text" name = "number_of_codes" required>
+                <label>Code - </label>
+                <input type = "text" name = "code" required>  
+                <input type = "submit" value = "List Rows">
+            </form>
+        </div>
+
+        <!-- <div>
+            <form method="POST" action = "/mag_range_and_place" enctype="multipart/form-data">
+                <label>Between magnitude range and containing place text: Lower Magnitude - </label>
+                <input type = "text" name = "lower_mag" required>  
+                <label>Upper Magnitude - </label>
+                <input type = "text" name = "upper_mag" required>  
+                <label>Place - </label>
+                <input type = "text" name = "place" required>  
+                <input type = "submit" value = "List Quakes">
+            </form>
+        </div>
+        <div>
+            <form method="POST" action = "/type_net_place" enctype="multipart/form-data">
+                <label>Given type and net, change place: type - </label>
+                <input type = "text" name = "type" required>  
+                <label>net - </label>
+                <input type = "text" name = "net" required>  
+                <label>Place new name - </label>
+                <input type = "text" name = "new_place" required>  
+                <input type = "submit" value = "List Quakes">
+            </form>
+        </div> -->
+        <!-- <div>
             <form method="POST" action = "/greater_than_magnitude" enctype="multipart/form-data">
                 <label>List of quakes larger than magnitude:</label>
                 <input type = "text" name = "magnitude" required>  
@@ -37,7 +89,7 @@
                 <input type = "text" name = "days" required>  
                 <input type = "submit" value = "Get splits">
             </form>
-        </div>
+        </div> -->
     </center>
 </body>
 
